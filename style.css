@@ -5,6 +5,11 @@
 }
 
 .bombLeftOut {
+  display: flex;
+  justify-content: center;
+}
+
+.bombLeftOut {
     -webkit-animation-name: bombLeftOut;
     animation-name: bombLeftOut;
   }
