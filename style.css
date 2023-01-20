@@ -4,7 +4,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.bombLeftOut button {
+.bombLeftOut {
     position: relative;
     left: 212px;
     top: 119px;
