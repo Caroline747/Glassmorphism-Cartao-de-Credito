@@ -58,7 +58,7 @@ nav .menu-btn {
 .footer {
   padding: 40px 0;
   background-color: antiquewhite;
-  margin-top: 63vh;
+  margin-top: -1vh;
 }
 
 .footer .social {
@@ -87,6 +87,10 @@ nav .menu-btn {
 
 .footer ul {
   margin-top: 0;
+}
+
+.ondas {
+  margin-top: 412px;
 }
 
 
