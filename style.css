@@ -1,14 +1,18 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Poppins', sans-serif
 }
 
 body {
   background-image: url(imagem/laptop-ga0823bfff_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  width: calc(min(1440px, 90%));
+  min-height: 100vh
+  
 }
 
 /*Menu*/
@@ -87,6 +91,12 @@ button {
   border-radius: 5px;
 }
 
+main {
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 6px 18px #00000029;
+  flex-direction: column-reverse;
+}
 
 
 
