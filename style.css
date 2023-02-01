@@ -22,12 +22,6 @@ nav {
   flex-wrap: wrap;
 }
 
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 200;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -54,49 +48,46 @@ nav ul li a:hover {
   color: black;
 }
 
+/*Menu Hambúrguer*/
 nav .menu-btn {
   color: #fff;
   cursor: pointer;
   display: none;
 }
 
-.footer {
-  padding: 40px 0;
-  background-color: antiquewhite;
-  margin-top: -1vh;
+.fa-brands, .fab {
+  color: #f4f5f7 !important;
 }
 
-.footer .social {
-  text-align: center;
-  padding-bottom: 25px;
-  color: #4b4c4d;
+.social:hover {
+  color: #000;
 }
 
-.footer .social a {
-  font-size: 24px;
-  color: inherit;
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0 8px;
-  opacity: 0.75;
+.conteudo-principal {
+  position: relative;
+  top: 116px;
+  left: 12px;
 }
 
-.footer .social a:hover {
-  opacity: 0.9;
+.conteudo-segundario {
+  font-size: 3rem;
+  color: #fff;
 }
 
-.footer ul {
-  margin-top: 0;
+p {
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1px;
 }
 
-.ondas {
-  margin-top: 412px;
+button {
+  border: transparent;
+  box-sizing: 1px 1px 1px 4px #fff;
+  border-radius: 5px;
 }
+
+
 
 
 
