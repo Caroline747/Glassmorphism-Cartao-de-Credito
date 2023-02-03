@@ -1,6 +1,12 @@
 :root {
-  --primary: #fff;
+  --white: #fff;
   --black: #000;
+  --gray: #999999;
+  --purple: #442c61;
+  --red: #f30808;
+  --light-blue: #0051ff;
+  --dark-blue: #00189e;
+
 }
 
 * {
@@ -16,7 +22,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   */
-  background-color: var(--primary);
+  background-color: var(--white);
   width: calc(min(1440px, 90%));
   min-height: 100vh
   
@@ -63,7 +69,7 @@ nav ul li a:hover {
 
 /*Menu Hambúrguer*/
 nav .menu-btn {
-  color: var(--primary);
+  color: var(--white);
   cursor: pointer;
   display: none;
 }
@@ -96,7 +102,7 @@ p {
 
 button {
   border: transparent;
-  box-sizing: 1px 1px 1px 4px var(--primary);;
+  box-sizing: 1px 1px 1px 4px var(--white);;
   border-radius: 5px;
 }
 
