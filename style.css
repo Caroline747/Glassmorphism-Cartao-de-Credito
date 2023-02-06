@@ -2,6 +2,7 @@
   --white: #fff;
   --black: #000;
   --gray: #999999;
+  --yellow: #ffee06;
   --purple: #442c61;
   --red: #f30808;
   --light-blue: #0051ff;
@@ -9,107 +10,127 @@
 
 }
 
-* {
+*,
+*::before,
+*::after  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif
 }
 
-body {
-  /*
-  background-image: url(imagem/laptop-ga0823bfff_1920.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  */
-  background-color: var(--white);
-  width: calc(min(1440px, 90%));
-  min-height: 100vh
-  
+.flex {
+  display: flex;
 }
 
+.absolute {
+  position: absolute;
+}
 
-
-/*Menu*/
-nav {
+.credit-card {
   display: flex;
-  height: 80px;
-  width: 100%;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: var(--purple);
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+.credit-card::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  transform: scaleX(-1);
 }
 
-nav ul li {
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: var(--black);
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  background: #6bd1df;
-  color: var(--black);
-}
-
-/*Menu Hambúrguer*/
-nav .menu-btn {
-  color: var(--white);
-  cursor: pointer;
-  display: none;
-}
-
-.fa-brands, .fab {
-  color: #42dce7 !important;
-}
-
-.social:hover {
-  color: var(--black);
-}
-
-.conteudo-principal {
+.card {
   position: relative;
-  top: 212px;
-  left: 47px;
+  width: 500px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 500px;
 }
 
-.conteudo-segundario {
-  font-size: 3rem;
-  color: var(--black);
-}
-
-p {
+.card .face {
+  top: 0;
+  left: 0;
   width: 100%;
-  color: var(--black);
-  font-size: 1rem;
-  padding: 1px;
+  height: 100%;
+  border: 1px solid rgb(255, 255, 255 / 20%);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgb(255, 255, 255 / 10%) 0%, transparent 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 0px 0px rgb(255, 255, 255 / 20%);
+  transform-style: preserve-3d;
+  transition: 0.75s ease-in-out;
+  backface-visibility: hidden;
+  transform: rotateY(0);
 }
 
-button {
-  border: transparent;
-  box-sizing: 1px 1px 1px 4px var(--white);;
-  border-radius: 5px;
+#chip {
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 50px;
 }
 
-img {
-  height: 117vh;
-  width: 260vh;
-  margin-top: -207px;
+#signal {
+  width: 25px;
+  height: 25px;
+  top: 115px;
+  left: 115px;
+  transform: rotate(90deg);
+}
+
+#logo {
+  width: 85px;
+  height: 85px;
+  bottom: 30px;
+  left: 40px;
+}
+
+#owner {
+  bottom: 55px;
+  left: 140px;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.card .face.front::before
+.card .face.front::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.card .face.front::before
+.card .face.front::after  {
+  top: 10px;
+  mix-blend-mode: overlay;
+}
+
+.card .face.front::before {
+  right: 20px;
+}
+
+.card .face.front::after {
+  right: 45px;
+}
+
+.card .face.front::before {
+  background: var(--yellow);
+}
+
+.card .face.front::after {
+  background: var(--red);
+}
+
+.card:hover .face.front {
+  transform: rotateY(180deg);
 }
 
 
@@ -123,41 +144,4 @@ img {
 
 
 
-
-
-@media (max-width: 920px) {
-  nav .menu-btn {
-    display: block;
-  }
-
-  nav ul {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background-color: #003840;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-
-  nav ul.open {
-    left: 0;
-  }
-
-  nav ul li {
-    width: 100%;
-    margin: 50px 0;
-  }
-
-  nav ul li a {
-    font-size: 23px;
-  }
-
-  nav ul li a:hover {
-    background: none;
-    color: #4c5cb3;;
-  }
-}
 
