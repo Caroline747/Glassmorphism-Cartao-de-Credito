@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/style.css">
+	<title>Glassmorphism | Credit Card | MAIATTO DEV</title>
 </head>
+
 <body>
-        
-        <section class="credit-card">
-            <div class="card">
-                <div class="face front absolute">
-                    <img src="/imagem/credit-card.png" alt="chip" id="chip" class="absolute">
-                    <img src="/imagem/wi-fi.svg" alt="signal" id="signal" class="absolute">
-                    <img src="/imagem/logo.png" alt="logo" id="logo" class="absolute">
-                    <p id="owner" class="absolute">Caroline S Araújo</p>
-                </div>
-            </div>
-        </section>
-
-    <script src="main.js"></script>
-
+	<section class="credit-card">
+		<div class="card">
+			<div class="face front absolute">
+				<img src="/imagem/credit-card.png" alt="Chip" id="chip" class="absolute"></img>
+				<img src="/imagem/wi-fi.svg" alt="Signal" id="signal" class="absolute"></img>
+				<img src="imagem/logo.png" alt="Logo" id="logo" class="absolute"></img>
+				<p id="owner" class="absolute">CAROLINE S ARAUJO</p>
+			</div>
+			<div class="face back absolute">
+				<div id="graybar" class="absolute"></div>
+				<div id="card-info" class="absolute">
+					<p id="card-number">1234 5678 9999 0000</p>
+					<div class="flex">
+						<p class="flex informations">
+							<span class="label">MEMBER SINCE</span>
+							<span>01/01</span>
+						</p>
+						<p class="flex informations">
+							<span class="label">VALID THRU</span>
+							<span>12/29</span>
+						</p>
+						<p class="flex informations">
+							<span class="label">SECURITY CODE</span>
+							<span>000</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
+
 </html>
