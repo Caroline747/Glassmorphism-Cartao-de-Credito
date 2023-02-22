@@ -29,8 +29,8 @@ body {
 
 .credit-card {
 	display: flex;
-	justify-content: end;
-	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .card .face {
-	top: -20vh;
+	top: -10vh;
   left: -150px;
 	width: 100%;
 	height: 100%;
@@ -235,14 +235,23 @@ body {
   }
   
   .conteudo-principal {
-    position: relative;
-    top: 100px;
-    left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    float: left;
+    margin-top: 163px;
+    margin-left: 45px;
+    margin-right: -454px;
   }
   
   .conteudo-segundario {
     font-size: 3rem;
     color: var(--white);
+  }
+
+  .botao-1, .botao-2 {
+    display: flex;
+    
   }
   
   p {
@@ -252,11 +261,6 @@ body {
     padding: 1px;
   }
   
-  button {
-    border: transparent;
-    box-sizing: 1px 1px 1px 4px var(--white);;
-    border-radius: 5px;
-  }
   
   /* BOTÃO DARK MODE*/
 
