@@ -8,12 +8,10 @@
 	--dark-blue: #08189e;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+* {
 	margin: 0;
 	padding: 0;
+  box-sizing: border-box;
 	font-family: Poppins, sans-serif;
 }
 
@@ -24,6 +22,113 @@ body {
 	background: #c27676;
   overflow: hidden;
 }
+
+/*MENU HAMBÚRGUER*/
+nav .menu-btn {
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #ffffff;
+  color: var(--black);
+}
+
+ 
+/* BOTÃO DARK MODE*/
+  .light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 20px;
+}
+
+.light-mode-button:focus {
+    outline: none; 
+}
+
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+
+body[light-mode="dark"] {
+    background-color: #141516;
+    color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #141516;
+}
+
+body[light-mode="dark"] a {
+    color: #fff;
+}
+
 
 /* CARTÃO DE CREDITO */
 
@@ -179,7 +284,6 @@ body {
 }
 
 /* ANIMAÇÃO */
-
 .card:hover .face.front {
 	transform: rotateY(180deg);
 }
@@ -188,52 +292,7 @@ body {
 	transform: rotateY(360deg);
 }
 
-/* MENU */
-
- nav {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 5px;
-  }
-  
-  nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    background: #ffffff;
-    color: var(--black);
-  }
-  
-  /*MENU HAMBÚRGUER*/
-  
-  nav .menu-btn {
-    color: var(--white);
-    cursor: pointer;
-    display: none;
-  }
-  
+/*CORPO DA PAGINA*/
   .conteudo-principal {
     display: flex;
     flex-wrap: wrap;
@@ -256,6 +315,7 @@ body {
     padding: 1px;
   }
 
+  /*BOTOES*/
   .bn54 {
     position: relative;
     outline: none;
@@ -326,67 +386,5 @@ body {
     }
   }
   
-  
-  /* BOTÃO DARK MODE*/
-
-  .light-mode-button {
-    background: 0;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    height: 40px;
-    width: 100px;
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0);
-    margin-top: 20px;
-}
-
-.light-mode-button:focus {
-    outline: none; 
-}
-
-.light-mode-button span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #d6d7db;
-    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
-    transition: 0.3s;
-}
-
-.light-mode-button span:nth-child(2) {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
-    transition: 0.3s;
-}
-
-
-body[light-mode="dark"] {
-    background-color: #141516;
-    color: #ced4e2;
-}
-
-body[light-mode="dark"] .light-mode-button span:nth-child(1) {
-    background-color: #ced4e2;
-    color: #141516;
-}
-
-body[light-mode="dark"] .light-mode-button span:nth-child(2) {
-    left: 65px;
-    background-color: #141516;
-}
-
-body[light-mode="dark"] a {
-    color: #fff;
-}
-
+ 
 
