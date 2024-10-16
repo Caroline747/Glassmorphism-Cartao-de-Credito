@@ -384,5 +384,17 @@ body[light-mode="dark"] a {
     }
   }
   
- 
+@media screen and (min-width: 1270px) {
+  .conteudo-principal {
+    width: 70%;
+  }
+
+  .credit-card {
+    min-height: 99vh !important;
+    width: 25%;
+    float: right;
+  }
+}
+
+
 
