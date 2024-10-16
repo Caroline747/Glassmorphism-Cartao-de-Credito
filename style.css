@@ -289,13 +289,12 @@ body[light-mode="dark"] a {
 /*CORPO DA PAGINA*/
   .conteudo-principal {
     display: flex;
-    
-    /*flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     float: left;
     margin-top: 163px;
     margin-left: 45px;
-    margin-right: -454px;*/
+    margin-right: -454px;
   }
   
   .conteudo-segundario {
