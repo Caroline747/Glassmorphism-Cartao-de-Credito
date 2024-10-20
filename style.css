@@ -129,7 +129,7 @@ body[light-mode="dark"] a {
 .credit-card {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	align-items: center;
 	min-height: 100vh;
 }
 
@@ -299,8 +299,7 @@ body[light-mode="dark"] a {
 
   .conteudo-principal {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
   
   .conteudo-segundario {
