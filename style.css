@@ -309,13 +309,11 @@ body[light-mode="dark"] a {
     width: 100%;
   }
   
-  /*.conteudo-principal > p {
+  .conteudo-principal > p {
     width: 100%;
     color: var(--white);
     font-size: 1rem;
-    padding: 1px;
-    margin-left: 35px;
-  }*/
+  }
 
   /*BOTOES*/
   .bn54 {
