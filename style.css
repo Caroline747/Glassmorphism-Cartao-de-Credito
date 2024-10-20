@@ -316,7 +316,7 @@ body[light-mode="dark"] a {
 
   /*BOTOES*/
   .bn54 {
-
+    position: relative;
     outline: none;
     text-decoration: none;
     border-radius: 50px;
