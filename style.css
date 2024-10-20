@@ -129,6 +129,8 @@ body[light-mode="dark"] a {
 .credit-card {
 	display: flex;
 	justify-content: flex-end;
+  margin-right: -25vh;
+  margin-top: -10vh;
 }
 
 .credit-card::before {
@@ -149,7 +151,7 @@ body[light-mode="dark"] a {
 }
 
 .card .face {
-	top: -10vh;
+	top: -55%;
   right: 60%;
 	width: 100%;
 	height: 100%;
@@ -298,8 +300,15 @@ body[light-mode="dark"] a {
   .conteudo-principal {
     display: flex;
     flex-direction: column;
+    margin-top: 10vh;
+    padding: 5vh;
   }
   
+  .conteudo-segundario {
+    width: 50%;
+    text-align: center;
+  }
+
   .conteudo-segundario h1 {
     font-size: 3rem;
     color: var(--white);
@@ -318,9 +327,6 @@ body[light-mode="dark"] a {
     outline: none;
     text-decoration: none;
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     text-transform: uppercase;
     height: 45px;
