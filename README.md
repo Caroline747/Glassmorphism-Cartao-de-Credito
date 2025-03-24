@@ -1,7 +1,9 @@
 
 # Glassmorphism | Cartão de Credito
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+<img src="/imagem/frente.png" alt="Frente do cartão">
+
+<img src="/imagem/verso.png" alt="Verso do cartão">
 
 
 ## Deploy
